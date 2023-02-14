@@ -169,7 +169,7 @@ def make_color_wheel():
 
     return colorwheel
 
-img = show_flow('/home/sdastani/projects/rrg-ebrahimi/sdastani/kth/flownet2-pytorch/output/inference/run.epoch-0-flow-field/000000.flo')
+img = show_flow('/home/sdastani/projects/rrg-ebrahimi/sdastani/flownet2-pytorch/output/inference/run.epoch-0-flow-field/000000.flo')
 
 import os
 import PIL.Image
@@ -179,7 +179,7 @@ def mkdir_ifnotexists(dir):
     os.mkdir(dir)
 
 
-flo_pth='/home/sdastani/projects/rrg-ebrahimi/sdastani/kth/flownet2-pytorch/output/inference/run.epoch-0-flow-field/'
+flo_pth='/home/sdastani/projects/rrg-ebrahimi/sdastani/flownet2-pytorch/output/inference/run.epoch-0-flow-field/'
 flos=[flo_pth + f for f in os.listdir(flo_pth)]
 mkdir_ifnotexists('./FlowFrames_kth')
 for i in range(len(flos)):
