@@ -1,3 +1,12 @@
+# Sonia's explanation
+
+- **First drop your video into the main directory**
+- **Then use frame_extraction.py to extract video frames**
+- **Download one of the flownet neural network architectures from Network architectures section and drop it into the main directory**
+- **Now use the following command and replace frame and flownet checkpoint directory with yours: `python main.py --inference --model FlowNet2 --save_flow --save ./output --inference_dataset ImagesFromFolder --inference_dataset_root /home/sdastani/projects/rrg-ebrahimi/sdastani/flownet2-pytorch/frames --resume /home/sdastani/projects/rrg-ebrahimi/sdastani/flownet2-pytorch/FlowNet2_checkpoint.pth.tar`**
+- **Then use flo_visualization.py to visualize the flows you produced. (They are in the output/inference/run.epoch-0-flow-field directory)**
+- **Now you have your Flow frames in FlowFrames folder.**
+
 # flownet2-pytorch 
 
 Pytorch implementation of [FlowNet 2.0: Evolution of Optical Flow Estimation with Deep Networks](https://arxiv.org/abs/1612.01925). 
