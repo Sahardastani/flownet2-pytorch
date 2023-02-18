@@ -181,6 +181,6 @@ def mkdir_ifnotexists(dir):
 
 flo_pth='/home/sdastani/projects/rrg-ebrahimi/sdastani/flownet2-pytorch/output/inference/run.epoch-0-flow-field/'
 flos=[flo_pth + f for f in os.listdir(flo_pth)]
-mkdir_ifnotexists('./FlowFrames_kth')
+mkdir_ifnotexists('./FlowFrames')
 for i in range(len(flos)):
-    PIL.Image.fromarray(flow_to_image(read_flow(flos[i]))).save('./FlowFrames_kth/'+os.path.basename(flos[i])+'.png')
+    PIL.Image.fromarray(flow_to_image(read_flow(flos[i]))).save('./FlowFrames/'+os.path.basename(flos[i])+'.png')
